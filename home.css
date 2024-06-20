@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
+    font-family: "Urbanist",sans-serif;
+    overflow-x: hidden;
 }
 nav img{
-    height: 49;
-    width: 48;
+    height: 49px;
+    width: 48px;
 }
 nav{
     display: flex;
@@ -14,14 +17,12 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     margin-top: 20px;
-    position: sticky;
-    top: 0;
-
+  
 }
 nav ul{
     list-style-type: none;
     display: flex;
-    gap: 80px;
+    gap: 130px;
 
 }
   button{
@@ -32,7 +33,7 @@ nav ul{
    width: 100px;
    height: 40px;
 }
-#Register,#watch{
+#Register,#watch,#butone,#buttwo{
   background-color: #097FD9;
   border: none;
   margin-left: 10px;
@@ -49,7 +50,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    gap: 50px;
+    gap: 270px;
 }
 .hero h2{
     font-size: 50px;
@@ -88,7 +89,7 @@ align-items: center;
     border: 2px solid white;
 }
 #images p{
-    font-size: 10px;
+    font-size: 15px;
     opacity: 1;
 }
 #gymImage{
@@ -98,7 +99,108 @@ align-items: center;
     background-repeat: no-repeat;
     
 }
+.programSection{
+    padding-top: 50px;
 
+}
+.programSection h2{
+    margin-top: -80px;
+    padding-left: 120px;
+    font-size: 40px;
+}
+
+#proImage{
+    width: 800px;
+    height: 150px;
+    
+}
+#icons{
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+    
+}
+#iconone,#icontwo{
+    width: 100px;
+    height: 50px;
+}
+#icontwo{
+    color: #097FD9;
+}
+#program{
+    display: flex;
+    gap: 100px;
+}
+.boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    width: calc(400px * 4 + 10px * 3); /* Adjust width to fit exactly 4 boxes including the gaps */
+    padding: 10px; /* Optional: add padding for aesthetic purposes */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.boxes::-webkit-scrollbar {
+    display: none;
+}
+
+.boxone {
+    height: 200px;
+    width: 300px;
+    background-color:rgb(255,255,255,0.1)    ;
+    color:white;
+    border-radius: 5px;
+    flex-shrink: 0; 
+}
+.boxtwo{
+    height: 200px;
+    width: 300px;
+    background-color:#097FD9   ;
+    color:white;
+    border-radius: 5px;
+    flex-shrink: 0; 
+}
+.transform{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+.transform img{
+    width: 600px;
+    height: 500px;
+}
+.transform h2{
+    font-size: 40px;
+}
+.transform ul {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    padding-left: 20px; /* Adjust padding as needed */
+    list-style-type: none;
+    gap: 20px;
+}
+
+.transform li {
+    padding-left: 30px; 
+    margin-bottom: 5px; 
+}
+
+.joinbuttons{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+#butone{
+    width: 160px;
+}
+#buttwo{
+    background-color: black;
+}
 @media (max-width:420px) {
     nav ul,button{
         display: none;
